@@ -1,0 +1,10 @@
+#file should be copied to /lib/systemd/system
+[Unit]
+Description=Docker Containers
+After=docker.service
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/home/yoseph/workspace/boot/up.sh
+ExecStop=/home/yoseph/workspace/boot/down.sh
+
